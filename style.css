@@ -89,3 +89,32 @@
   display:inline-block; padding:4px 12px; border-radius:999px; font-size:12px; font-weight:700;
   background: color-mix(in srgb, var(--accent-2) 12%, transparent); color: var(--accent-2);
 }
+
+/* ---- 轉單文範例卡 ---- */
+.tpl-report .ex .ex-type {
+  display:inline-block; font-size:12px; font-weight:800; letter-spacing:.04em;
+  padding:3px 12px; border-radius:999px; margin-bottom:10px;
+  background: color-mix(in srgb, var(--accent-3) 16%, transparent); color: var(--accent-3);
+}
+.tpl-report .ex h4 { font-size:18px; margin:0 0 8px; }
+.tpl-report .ex .ex-quote {
+  border-left:3px solid var(--accent-3); background: var(--surface-2);
+  border-radius:8px; padding:10px 14px; margin:0 0 10px;
+  font-size:13px; line-height:1.55; color:var(--text-1); white-space:pre-line;
+}
+.tpl-report .ex .ex-perf {
+  font-size:12.5px; font-weight:700; color:var(--text-2); margin:0;
+}
+.tpl-report .ex .ex-perf b { color: var(--accent-3); }
+.tpl-report .ex-foot { margin-top:18px; font-size:13.5px; color:var(--text-2); }
+.tpl-report .ex-foot b { color: var(--accent-2); }
+
+/* ---- 規劃：手動流程步驟 ---- */
+.tpl-report .manual-step { display:flex; gap:14px; align-items:flex-start; margin:14px 0; }
+.tpl-report .manual-step .s-n {
+  flex:none; width:30px; height:30px; border-radius:8px; display:grid; place-items:center;
+  font-weight:800; font-size:15px; color:#fff; background:var(--grad);
+}
+.tpl-report .manual-step .s-t { font-size:17px; color:var(--text-1); line-height:1.5; }
+.tpl-report .manual-step .s-t b { color:var(--accent-2); }
+.tpl-report .manual-step .s-t span { display:block; font-size:14px; color:var(--text-2); margin-top:2px; }
