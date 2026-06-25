@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-themes="corporate-clean,swiss-grid,minimal-white,editorial-serif,academic-paper">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>社群貼文 Agentic 系統 · 運作報告 2026-06-25</title>
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/base.css">
+<link rel="stylesheet" id="theme-link" href="assets/themes/corporate-clean.css">
+<link rel="stylesheet" href="assets/animations/animations.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="tpl-report">
+<div class="deck">
+
+  <!-- 1. 封面 -->
+  <section class="slide center" data-title="封面">
+    <p class="kicker anim-fade-up" data-anim="fade-up">系統運作報告 · 2026-06-25</p>
+    <h1 class="h1 anim-fade-up" data-anim="fade-up" style="margin-top:10px">社群貼文 <span class="gradient-text">Agentic 系統</span></h1>
+    <p class="lede anim-fade-up" data-anim="fade-up" style="margin:8px auto 0;text-align:center">
+      從「找對民眾真正在問的問題」到「自動驗證成效」的一條龍閉環
+    </p>
+    <div class="row wrap anim-fade-up" data-anim="fade-up" style="justify-content:center;margin-top:26px;gap:10px">
+      <span class="pill">一週一個主題</span>
+      <span class="pill">衛教引流 ＋ 轉單交錯</span>
+      <span class="pill">成效每週自動回收</span>
+      <span class="pill">人工把關才發佈</span>
+    </div>
+    <div class="deck-footer"><span class="mono">Social Media Posts Agentic System</span><span class="slide-number" data-current="1" data-total="15"></span></div>
+    <div class="notes">
+      開場：今天用十分鐘，把我們這套「社群貼文 Agentic 系統」從頭到尾講一遍。請大家記住一個關鍵詞——「閉環」。
+      它不是一個寫文案的工具，而是一條會自己越跑越準的流水線：先找到民眾真正在問的問題，再對接我們的主推療程，
+      接著規劃一整週的內容、交錯安排引流文和轉單文，發佈前一定由人核准，最後系統每週自動回收成效、產生報告，
+      再把學到的東西餵回去影響下一輪。整場簡報我會盡量用白話講，技術細節我放在每一頁的講者備忘，需要時再展開。
+    </div>
+  </section>
+
+  <!-- 2. 為什麼做這套系統 -->
+  <section class="slide" data-title="為什麼">
+    <p class="kicker">背景 · 我們要解決什麼</p>
+    <h2 class="h2">過去做社群，靠的是<span class="gradient-text">感覺</span>。</h2>
+    <div class="grid g3 mt-l">
+      <div class="card card-accent"><h4>選題憑直覺</h4><p class="dim">想到什麼寫什麼，不一定是民眾真正在搜尋、在煩惱的事。</p></div>
+      <div class="card card-accent"><h4>產出不穩定</h4><p class="dim">人忙就斷更；同一主題寫起來常常每篇都長一樣。</p></div>
+      <div class="card card-accent"><h4>發完不知成效</h4><p class="dim">數據要手動撈，多半沒人撈，下一篇還是憑感覺。</p></div>
+    </div>
+    <p class="lede mt-l">這套系統把流程變成可重複的流水線——<b>人只負責兩件事：上傳乾淨的資料、發佈前把關</b>，其餘交給系統。</p>
+    <div class="deck-footer"><span class="mono">背景與目標</span><span class="slide-number" data-current="2" data-total="15"></span></div>
+    <div class="notes">
+      先講為什麼。過去做社群內容有三個老問題：第一，選題憑直覺，不見得是受眾真正關心的；第二，產出不穩定，
+      人一忙就斷更，而且同一個主題寫多篇容易重複；第三，也是最痛的——發完之後沒人回頭看成效，等於每一篇都是重新猜。
+      這套系統的目標，就是把「選題、規劃、發佈、驗收」這條流程標準化、自動化，讓人力集中在兩個最該由人做的環節：
+      把資料整理乾淨、以及發佈前的最終把關。其他重複勞動交給系統，品質才穩得住。
+    </div>
+  </section>
+
+  <!-- 3. 全景閉環 -->
+  <section class="slide" data-title="全景">
+    <p class="kicker">全貌 · 一張圖看懂</p>
+    <h2 class="h2">五個階段，串成一個會學習的閉環</h2>
+    <div class="pipeline">
+      <div class="pipe-step"><span class="n">① 選題</span><h4>民眾真實問題</h4><p>從標記過的 CSV 取「真實需求」貼文當題庫。</p></div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step"><span class="n">② 匹配</span><h4>對接主推療程</h4><p>用知識庫把話題路由到我方療程觀點。</p></div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step"><span class="n">③ 規劃</span><h4>七天內容＋排程</h4><p>一個主題拆七個切角，引流／轉單交錯。</p></div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step"><span class="n">④ 發佈</span><h4>人工核准</h4><p>網頁預覽＋對話修改，核准了才發三平台。</p></div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-step"><span class="n">⑤ 成效</span><h4>每週自動回收</h4><p>抓數據入庫，AI 產報告收進知識庫。</p></div>
+    </div>
+    <p class="loop-note">⑤ 的成效報告會<b>回饋</b>到 ① 的選題與寫法 —— 這就是讓系統<b>越跑越準</b>的飛輪。</p>
+    <div class="deck-footer"><span class="mono">系統全景</span><span class="slide-number" data-current="3" data-total="15"></span></div>
+    <div class="notes">
+      這頁是整場的地圖，後面每一頁都是放大其中一格。五個階段：選題、匹配、規劃、發佈、成效。
+      請特別注意最後那句話——第五階段產出的成效報告，會回饋到第一階段的選題和寫法。
+      也就是說這不是一條直線跑完就結束，而是一個循環：這週學到哪種主題、哪種切角效果好，下週就會更準。
+      這就是我們一直強調的「飛輪」或「閉環」。接下來就照這五格的順序，一格一格講。
+    </div>
+  </section>
+
+  <!-- 4. 階段一 選題 -->
+  <section class="slide" data-title="階段一·選題">
+    <div class="phase"><span class="badge">1</span><span class="label">選題</span></div>
+    <h2 class="h2">只寫「民眾真正想解決的問題」</h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div>
+        <ul class="clean">
+          <li>資料來自<b>標記過的社群 CSV</b><span class="sub">人工把每筆貼文標上分類，例如「真實需求／問題」「競品自然」。</span></li>
+          <li>系統只挑出<b>標記＝真實需求／問題</b>且<b>排名第一（rank 1）</b>的貼文<span class="sub">也就是大家最常問、最有共鳴的題目。</span></li>
+          <li>從中取<b>前 20 名</b>當作本週題庫<span class="sub">與其自說自話，不如回答受眾本來就在搜尋、在煩惱的事。</span></li>
+        </ul>
+      </div>
+      <div class="card card-soft">
+        <h4>為什麼從「問題」出發？</h4>
+        <p class="dim">同樣是談拉提，「我臉怎麼鬆了？」比「介紹某療程」更容易被看見、被收藏、被留言。系統因此優先把<b>需求</b>轉成內容，而不是把<b>產品</b>推出去。</p>
+      </div>
+    </div>
+    <div class="deck-footer"><span class="mono">階段一 · 選題</span><span class="slide-number" data-current="4" data-total="15"></span></div>
+    <div class="notes">
+      第一階段：選題。我們的素材來源，是一份「已經被人工標記過」的社群貼文 CSV。每一筆貼文都被標上分類，
+      像是「真實需求／問題」「競品自然」這些。系統做的，是只挑出標記為「真實需求／問題」、而且排名第一的那些貼文，
+      再取前二十名當成這一週的題庫。背後的邏輯很簡單：與其我們自己想講什麼，不如去回答民眾本來就在問的事。
+      右邊那張卡是關鍵心法——同樣談拉提，「我的臉怎麼鬆了」這種問題，比「介紹某個療程」更容易被看到、被收藏、被留言。
+      所以系統是把「需求」翻成內容，而不是把「產品」硬推出去。
+    </div>
+  </section>
+
+  <!-- 5. 階段一護欄 人工爬蟲 -->
+  <section class="slide" data-title="護欄·人工資料">
+    <p class="kicker">護欄之一 · 資料來源</p>
+    <h2 class="h2">爬蟲<span class="gradient-text">優先人工</span>，整理乾淨再上傳 CSV</h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card guard">
+        <h4>目前刻意「以人工處理資料」為主</h4>
+        <p class="dim">自動爬蟲的資料品質參差，平台政策也敏感。現階段由人把資料抓取、清洗、標記好，再上傳 CSV，系統才接手後續改寫與排程。</p>
+      </div>
+      <ul class="clean">
+        <li>來源<b>乾淨、可追溯</b>，不踩平台紅線</li>
+        <li>上傳介面支援<b>中文 / 別名欄位</b>與 <b>UTF-8</b><span class="sub">欄位名稱用中文或英文都認得，中文不會變亂碼。</span></li>
+        <li>未來才會把爬蟲整進系統（Phase 2），但<b>人工把關的原則不變</b></li>
+      </ul>
+    </div>
+    <div class="deck-footer"><span class="mono">資料護欄</span><span class="slide-number" data-current="5" data-total="15"></span></div>
+    <div class="notes">
+      這是我們的第一道護欄，關於資料怎麼進來。雖然技術上可以全自動爬蟲，但我們現階段刻意選擇「以人工處理資料為主」。
+      原因有兩個：一是自動爬下來的資料品質參差不齊，二是各平台對爬蟲的政策很敏感。所以目前的做法是——
+      由人把資料抓好、清洗、標記分類，再上傳成 CSV，系統才開始接手改寫和排程。好處是來源乾淨、每一筆都可追溯，也不會踩平台紅線。
+      順帶一提，上傳介面我們特別處理過：欄位名稱用中文或英文別名都認得，中文也不會變亂碼。
+      未來第二階段才會考慮把爬蟲整合進系統，但「人工把關」這個原則不會變。
+    </div>
+  </section>
+
+  <!-- 6. 階段二 匹配 -->
+  <section class="slide" data-title="階段二·匹配">
+    <div class="phase"><span class="badge">2</span><span class="label">匹配</span></div>
+    <h2 class="h2">把熱門話題，對接到我們的<span class="gradient-text">主推療程</span></h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div>
+        <ul class="clean">
+          <li>知識庫收錄主推療程<span class="sub">八字提線、三層拉提、筋膜拉皮、提眉…各有專屬筆記。</span></li>
+          <li>系統依話題<b>關鍵字自動路由</b>到對應療程<span class="sub">命中夠多關鍵字才會觸發，避免硬扯不相關的項目。</span></li>
+          <li>只補我方的<b>機制與判斷觀點</b>，<b>不杜撰療效或數字</b></li>
+        </ul>
+      </div>
+      <div class="card card-soft">
+        <h4>「借切角」而不是「換主題」</h4>
+        <p class="dim">改寫時以來源話題的<b>痛點與部位</b>為主軸完整保留；知識庫只負責補上「為什麼這個方向對」的邏輯，不會把筆記裡其他部位硬塞進來。</p>
+      </div>
+    </div>
+    <div class="deck-footer"><span class="mono">階段二 · 匹配療程</span><span class="slide-number" data-current="6" data-total="15"></span></div>
+    <div class="notes">
+      第二階段：匹配。選好題目後，系統要把這個熱門話題對接到「我們真正主推的療程」。
+      做法是：我們的知識庫裡收錄了每一項主推療程的筆記，例如八字提線、三層拉提、筋膜拉皮、提眉。
+      系統會看這篇話題講的是什麼，用關鍵字自動「路由」到對應的療程；而且要命中夠多關鍵字才觸發，避免硬扯不相關的項目。
+      最重要的原則在右邊：知識庫只負責補上「為什麼這個方向是對的」這種機制和判斷邏輯，不會去杜撰療效或數字，
+      也不會把筆記裡其他部位硬塞進這篇。改寫時，來源話題在講的痛點和部位才是主軸，知識庫只是「借邏輯」，不是「換主題」。
+    </div>
+  </section>
+
+  <!-- 7. 韓國醫美護欄 -->
+  <section class="slide" data-title="護欄·韓國貼文">
+    <p class="kicker">護欄之二 · 內容真實性</p>
+    <h2 class="h2">韓國醫美貼文：<span class="gradient-text">只當對照，不改寫</span></h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card guard">
+        <h4>不把別人的療程改寫成我們的貼文</h4>
+        <p class="dim">凡是涉及韓國／坊間的音波、電波、線雕的貼文，系統不會拿來改寫成我方文案，避免替他人療程背書，也避免內容失真。</p>
+      </div>
+      <ul class="clean">
+        <li>這類話題改用<b>「對照」</b>手法處理<span class="sub">用它來凸顯我方差異，而不是照抄。</span></li>
+        <li>對照重點：<b>跨韌帶、跨三層、可逆性</b>等我方技術優勢</li>
+        <li>守住「<b>不失真、不背書</b>」的底線，內容才可信</li>
+      </ul>
+    </div>
+    <div class="deck-footer"><span class="mono">真實性護欄</span><span class="slide-number" data-current="7" data-total="15"></span></div>
+    <div class="notes">
+      第二道護欄，關於內容的真實性。這是一條明確的規則：凡是涉及韓國、或坊間其他家的音波、電波、線雕的貼文，
+      系統不會把它改寫成我們的貼文。理由是——改寫等於替別人的療程背書，而且很容易讓內容失真。
+      那這類話題怎麼用？我們改用「對照」的方式：拿它當參照點，去凸顯我方的差異和優勢，
+      像是我們強調的跨韌帶、跨三層、可逆性這些技術核心。一句話總結：別人的東西我們不照抄、不背書，只拿來襯托我們的不同。
+      守住這條底線，內容才站得住腳。
+    </div>
+  </section>
+
+  <!-- 8. 階段三 七天規劃 -->
+  <section class="slide" data-title="階段三·七天規劃">
+    <div class="phase"><span class="badge">3</span><span class="label">規劃</span></div>
+    <h2 class="h2">一個主題，<span class="gradient-text">七種不同切角</span></h2>
+    <div class="grid g3 mt-l">
+      <div class="card card-accent"><h4>拆成七天</h4><p class="dim">AI 把同一個主題拆成 7 天，每天一個明顯不同的切角：迷思破解、真實案例、費用迷思、術後保養⋯</p></div>
+      <div class="card card-accent"><h4>三平台各寫</h4><p class="dim">IG / FB / Threads 文案各自生成，文體不同，再共用同一張資訊圖。</p></div>
+      <div class="card card-accent"><h4>自動排程</h4><p class="dim">直接把七天份內容排進未來的行事曆，不必每天手動發。</p></div>
+    </div>
+    <p class="lede mt-l">核心價值：解決「同一主題每篇都長一樣」的老問題 —— <b>每天角度都明顯不同</b>。</p>
+    <div class="deck-footer"><span class="mono">階段三 · 七天規劃</span><span class="slide-number" data-current="8" data-total="15"></span></div>
+    <div class="notes">
+      第三階段：規劃，這是系統最聰明的一段。選定一個主題後，AI 不會只寫一篇，而是把這個主題拆成七天，
+      每天給一個「明顯不同」的切角——比方說第一天破解迷思、第二天講真實案例、第三天談費用、第四天聊術後保養，以此類推。
+      每一天的內容，三個平台 IG、FB、Threads 都各自生成，文體不一樣，但共用同一張資訊圖，省成本又一致。
+      生成完就直接排進未來七天的行事曆，不用每天手動發。這一段最大的價值，是解決「同一個主題寫七篇、結果每篇都長一樣」這個老毛病，
+      系統會確保每天的角度都真的不同。
+    </div>
+  </section>
+
+  <!-- 9. 發文節奏 -->
+  <section class="slide" data-title="發文節奏">
+    <p class="kicker">階段三 · 節奏</p>
+    <h2 class="h2">引流與轉單，<span class="gradient-text">交錯</span>出節奏</h2>
+    <div class="grid g3 mt-l">
+      <div class="card"><div class="stat"><div class="big">×2</div><div class="cap">一週發兩次<br>不洗版、維持品質</div></div></div>
+      <div class="card"><div class="stat"><div class="big">2–3 天</div><div class="cap">每隔 2–3 天<br>插入一篇「轉單文」</div></div></div>
+      <div class="card"><div class="stat"><div class="big">一致</div><div class="cap">轉單文的主題／切角<br>和前一篇引流文一致</div></div></div>
+    </div>
+    <p class="lede mt-l">關鍵規則：<b>先用引流文給價值、建立信任，再用同一切角的轉單文自然收單。</b></p>
+    <div class="deck-footer"><span class="mono">發文節奏</span><span class="slide-number" data-current="9" data-total="15"></span></div>
+    <div class="notes">
+      同樣在第三階段，講節奏。我們不追求洗版，而是維持品質：一週發兩次。在這個節奏裡，每隔兩到三天會插入一篇「轉單文」。
+      這裡有一條最關鍵的規則，請大家記住——轉單文的主題和切角，一定要和它前面那篇引流文一致。
+      為什麼？因為這是一套「先給價值、再收單」的設計：引流文先用衛教內容回答問題、建立信任，
+      等讀者已經對這個主題產生興趣，緊接著同一個切角的轉單文出現，就能很自然地引導他採取行動，而不是突兀地推銷。
+      切角不一致，前面累積的信任就斷掉了，所以這條規則很重要。
+    </div>
+  </section>
+
+  <!-- 10. 引流 vs 轉單 -->
+  <section class="slide" data-title="引流vs轉單">
+    <p class="kicker">兩種角色 · 一條線索</p>
+    <h2 class="h2">引流文 vs 轉單文</h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div class="card card-accent">
+        <span class="vs-tag lead">引流文 · 衛教</span>
+        <h4>建立信任</h4>
+        <ul class="clean" style="margin-top:6px">
+          <li>回答民眾的問題，<b>不推銷</b></li>
+          <li>正確、實用、好懂的衛教觀點</li>
+          <li>負責「把人吸引進來」</li>
+        </ul>
+      </div>
+      <div class="card card-accent">
+        <span class="vs-tag conv">轉單文 · 個人化故事</span>
+        <h4>自然收單</h4>
+        <ul class="clean" style="margin-top:6px">
+          <li>像醫師本人在分享的<b>故事感</b>文體</li>
+          <li>結尾固定<b>兩個 CTA 誘餌</b><span class="sub">抗老祕訣錄音檔／微整聖經電子書，引導留言。</span></li>
+          <li>由<b>獨立的 sub-agent 與 prompt</b> 生成，文體刻意不同</li>
+        </ul>
+      </div>
+    </div>
+    <div class="deck-footer"><span class="mono">內容雙角色</span><span class="slide-number" data-current="10" data-total="15"></span></div>
+    <div class="notes">
+      這頁把兩種貼文的角色講清楚。左邊是引流文，也就是衛教文：它的任務是建立信任，回答民眾的問題，正確、實用、好懂，完全不推銷，負責「把人吸引進來」。
+      右邊是轉單文：文體刻意不一樣，寫得像醫師本人在分享的個人故事，比較有溫度、有故事感；
+      它的結尾固定放兩個 CTA 誘餌——抗老祕訣的錄音檔、還有微整聖經電子書，用「留言就送」引導讀者互動。
+      技術上，轉單文是由一個獨立的 sub-agent、用獨立的提示詞生成的，所以它的口吻和衛教文明顯區隔開。
+      兩種角色、一條線索：引流先鋪陳，轉單來收尾。
+    </div>
+  </section>
+
+  <!-- 11. 階段四 人工核准 -->
+  <section class="slide" data-title="階段四·人工核准">
+    <div class="phase"><span class="badge">4</span><span class="label">發佈</span></div>
+    <h2 class="h2">護欄之三：<span class="gradient-text">人核准了，才發得出去</span></h2>
+    <div class="grid g3 mt-l">
+      <div class="card card-accent"><h4>網頁預覽</h4><p class="dim">三平台文案＋資訊圖＋來源圖一次呈現，文字可以直接在頁面上編輯儲存。</p></div>
+      <div class="card card-accent"><h4>對話式 Agent</h4><p class="dim">右側可以直接叫它「改文案、重生圖、換切角」，像跟編輯對話一樣。</p></div>
+      <div class="card card-accent"><h4>核准並發佈</h4><p class="dim">按下確認，才會真的發三平台 → Slack 通知 → 自動去重記錄。</p></div>
+    </div>
+    <p class="lede mt-l">AI 負責<b>產出與修改</b>，最後的<b>發佈決定權永遠在人手上</b>。</p>
+    <div class="deck-footer"><span class="mono">階段四 · 人工核准</span><span class="slide-number" data-current="11" data-total="15"></span></div>
+    <div class="notes">
+      第四階段：發佈，也是我們的第三道護欄。系統再聰明，最後一關一定是人。流程是這樣：
+      生成好的內容會在網頁上預覽，三個平台的文案、AI 生成的資訊圖、還有來源圖，全部一次呈現，而且文字可以直接在頁面上改、改完存檔。
+      頁面右側還有一個對話式的 Agent，你可以像跟編輯講話一樣，直接叫它「這段改一下」「圖重生一張」「換個切角」。
+      等你滿意了，按下「核准並發佈」，系統才會真的把內容發到三個平台，同時發 Slack 通知、並做去重記錄避免重複發。
+      一句話：AI 負責產出和修改，但發佈的決定權永遠在人手上。
+    </div>
+  </section>
+
+  <!-- 12. 階段五 成效回收 -->
+  <section class="slide" data-title="階段五·成效回收">
+    <div class="phase"><span class="badge">5</span><span class="label">成效</span></div>
+    <h2 class="h2">每週<span class="gradient-text">自動回收</span>成效</h2>
+    <div class="grid g2 mt-l" style="align-items:start">
+      <div>
+        <ul class="clean">
+          <li>啟動後，第一次在<b>「起算日 + 8 天」</b>執行<span class="sub">多等一天，讓上週貼文的數據先沉澱再抓。</span></li>
+          <li>之後<b>每隔 7 天</b>自動跑一次，不必有人盯</li>
+          <li>只抓<b>本系統發佈</b>的每篇貼文，逐篇逐平台撈成效</li>
+        </ul>
+      </div>
+      <div class="card card-soft">
+        <h4>抓哪些數字？</h4>
+        <div class="row wrap" style="gap:8px;margin-top:8px">
+          <span class="tag-accent">讚</span><span class="tag-accent">留言</span><span class="tag-accent">分享</span>
+          <span class="tag-accent">觸及</span><span class="tag-accent">觀看</span>
+        </div>
+        <p class="dim mt-m">單篇抓取失敗不影響其他篇，容錯設計確保報告照常產出。</p>
+      </div>
+    </div>
+    <div class="deck-footer"><span class="mono">階段五 · 成效回收</span><span class="slide-number" data-current="12" data-total="15"></span></div>
+    <div class="notes">
+      第五階段：成效回收，這是讓閉環真正閉起來的關鍵。系統啟動自動抓取後，第一次會在「起算日往後第八天」執行——
+      為什麼是第八天而不是第七天？因為要多等一天，讓上一週貼文的數據先沉澱、穩定下來再抓，數字才準。
+      之後就固定每隔七天自動跑一次，完全不用有人盯著。它只抓「由本系統發佈」的貼文，逐篇、逐平台去撈成效，
+      撈的指標包括讚、留言、分享、觸及、觀看這幾項。而且設計上有容錯：就算某一篇抓失敗，也不會拖垮整份報告，其他篇照常處理。
+    </div>
+  </section>
+
+  <!-- 13. 報告與飛輪 -->
+  <section class="slide" data-title="報告與飛輪">
+    <p class="kicker">階段五 · 從數據到洞察</p>
+    <h2 class="h2">資料入庫 → AI 解讀 → <span class="gradient-text">回饋知識庫</span></h2>
+    <div class="grid g3 mt-l">
+      <div class="card card-accent"><h4>① 入庫＋出表</h4><p class="dim">數據存進資料庫，並匯出 CSV（含 UTF-8 BOM，Excel 開不亂碼），方便人工複查。</p></div>
+      <div class="card card-accent"><h4>② AI 產週報</h4><p class="dim">用 AI 把這週成效寫成白話的成效週報，講清楚哪些有效、哪些沒效。</p></div>
+      <div class="card card-accent"><h4>③ 收進知識庫</h4><p class="dim">週報存進知識庫的 reports/，成為下一輪選題與寫法的依據。</p></div>
+    </div>
+    <p class="loop-note">這週學到什麼 → <b>影響下週怎麼選題、怎麼寫</b> → 系統越跑越懂受眾。</p>
+    <div class="deck-footer"><span class="mono">成效飛輪</span><span class="slide-number" data-current="13" data-total="15"></span></div>
+    <div class="notes">
+      抓完數據之後做三件事。第一，入庫並出表：數據存進資料庫，同時匯出一份 CSV——這份 CSV 特別加了 UTF-8 的 BOM，
+      所以用 Excel 打開中文不會亂碼，方便人工複查。第二，AI 解讀：系統用 AI 把這一週的成效寫成一份白話的週報，
+      清楚講出哪些主題有效、哪些沒效。第三，回饋：這份週報會被收進知識庫的 reports 資料夾，
+      成為下一輪選題和寫法的參考依據。這就完成了整個飛輪——這週學到的東西，會直接影響下週怎麼選題、怎麼寫，系統因此越跑越懂我們的受眾。
+    </div>
+  </section>
+
+  <!-- 14. 一週時間軸 -->
+  <section class="slide" data-title="一週節奏">
+    <p class="kicker">把節奏攤開來看</p>
+    <h2 class="h2">一週實際長這樣</h2>
+    <div class="week">
+      <div class="day"><span class="d">DAY 0</span><span class="what">選題＋七天規劃排程</span><span class="chip">籌備</span></div>
+      <div class="day lead"><span class="d">DAY 1</span><span class="what">引流文</span><span class="chip">衛教</span></div>
+      <div class="day"><span class="d">DAY 2</span><span class="what">—</span></div>
+      <div class="day conv"><span class="d">DAY 3</span><span class="what">轉單文<br><small>（接 Day1 切角）</small></span><span class="chip">收單</span></div>
+      <div class="day"><span class="d">DAY 4</span><span class="what">—</span></div>
+      <div class="day lead"><span class="d">DAY 5</span><span class="what">引流文</span><span class="chip">衛教</span></div>
+      <div class="day conv"><span class="d">DAY 7</span><span class="what">轉單文<br><small>（接 Day5 切角）</small></span><span class="chip">收單</span></div>
+      <div class="day report"><span class="d">DAY 8</span><span class="what">第一份成效週報</span><span class="chip">驗收</span></div>
+    </div>
+    <p class="dim mt-l" style="font-size:14px">＊示意排程：實際發佈日與時段可在系統內設定；轉單文一律延續前一篇引流文的主題與切角。</p>
+    <div class="deck-footer"><span class="mono">一週節奏示意</span><span class="slide-number" data-current="14" data-total="15"></span></div>
+    <div class="notes">
+      把前面講的節奏攤平成一條時間軸，會更直覺。Day 0 是籌備：選題、規劃、把七天內容排好程。
+      接著 Day 1 發第一篇引流文，隔個兩三天、到 Day 3 發轉單文，注意它接的是 Day 1 的同一個切角；
+      Day 5 再發一篇引流文，Day 7 再接一篇延續 Day 5 切角的轉單文——這就是「一週兩次、引流轉單交錯」的實際樣子。
+      然後到 Day 8，也就是起算日後第八天，系統跑出第一份成效週報，完成驗收，接著進入下一輪。
+      要強調這是示意：實際的發佈日和時段都可以在系統裡自己設定，但「轉單文延續前一篇引流文切角」這條規則是固定不變的。
+    </div>
+  </section>
+
+  <!-- 15. 總結 -->
+  <section class="slide center" data-title="總結">
+    <p class="kicker">總結</p>
+    <h2 class="h2">三道護欄，撐起一個會學習的系統</h2>
+    <div class="grid g3 mt-l" style="width:100%">
+      <div class="card guard"><h4>人工核准才發佈</h4><p class="dim">發佈決定權永遠在人手上。</p></div>
+      <div class="card guard"><h4>韓國貼文只對照</h4><p class="dim">不背書、不失真。</p></div>
+      <div class="card guard"><h4>資料人工把關</h4><p class="dim">乾淨來源，不杜撰療效。</p></div>
+    </div>
+    <p class="lede mt-l" style="text-align:center;margin-left:auto;margin-right:auto">
+      選題<b>有依據</b>、產出<b>穩定不重複</b>、成效<b>可量化</b> —— 而且<b>每跑一週，就更懂受眾一點</b>。
+    </p>
+    <div class="deck-footer"><span class="mono">2026-06-25 · 社群貼文 Agentic 系統</span><span class="slide-number" data-current="15" data-total="15"></span></div>
+    <div class="notes">
+      做個總結。整套系統的可靠，建立在三道護欄上：第一，發佈前一定人工核准，決定權在人；
+      第二，韓國醫美貼文只拿來對照、不改寫，不背書也不失真；第三，資料來源由人工把關，內容不杜撰療效。
+      在這三道護欄之上，我們得到的是一個會學習的系統：選題有依據、產出穩定又不重複、成效可以量化，
+      而且最棒的是——每跑完一週，它就更懂我們的受眾一點。這就是「Agentic」的真正意義：不是取代人，而是把人從重複勞動裡解放出來，
+      讓人專注在判斷和把關上。謝謝大家，有問題我們可以一起討論。
+    </div>
+  </section>
+
+</div>
+<div class="progress-bar"><span></span></div>
+<script src="assets/runtime.js"></script>
+<script src="assets/animations/fx-runtime.js"></script>
+</body>
+</html>

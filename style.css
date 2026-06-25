@@ -1,0 +1,91 @@
+/* 社群貼文 Agentic 系統 · 運作報告 — deck-scoped styles (.tpl-report) */
+
+.tpl-report .slide { padding: 64px 88px; }
+.tpl-report .kicker { letter-spacing: .12em; }
+.tpl-report .lede { max-width: 70ch; }
+
+/* ---- 階段編號徽章 ---- */
+.tpl-report .phase {
+  display: inline-flex; align-items: center; gap: 12px; margin-bottom: 6px;
+}
+.tpl-report .phase .badge {
+  width: 40px; height: 40px; border-radius: 999px; flex: none;
+  display: grid; place-items: center; font-weight: 800; font-size: 18px;
+  color: #fff; background: var(--grad);
+}
+.tpl-report .phase .label {
+  font-size: 14px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent-2);
+}
+
+/* ---- 五階段流水線 ---- */
+.tpl-report .pipeline {
+  display: flex; align-items: stretch; gap: 0; margin-top: 28px; flex-wrap: nowrap;
+}
+.tpl-report .pipe-step {
+  flex: 1; background: var(--surface); border: 1px solid var(--border);
+  border-top: 3px solid var(--accent); border-radius: var(--radius-sm);
+  padding: 18px 16px; box-shadow: var(--shadow); position: relative;
+}
+.tpl-report .pipe-step .n { font-size: 13px; font-weight: 800; color: var(--accent-2); }
+.tpl-report .pipe-step h4 { font-size: 18px; margin: 6px 0 6px; }
+.tpl-report .pipe-step p { font-size: 13.5px; color: var(--text-2); margin: 0; line-height: 1.5; }
+.tpl-report .pipe-arrow {
+  flex: none; align-self: center; width: 34px; text-align: center;
+  font-size: 22px; color: var(--accent-2); font-weight: 700;
+}
+.tpl-report .loop-note {
+  margin-top: 22px; text-align: center; font-size: 15px; color: var(--text-2);
+}
+.tpl-report .loop-note b { color: var(--accent-2); }
+
+/* ---- 數據 / 指標卡 ---- */
+.tpl-report .stat .big {
+  font-family: var(--font-display); font-weight: 800; font-size: 46px; line-height: 1;
+  color: var(--accent-2); letter-spacing: -.02em;
+}
+.tpl-report .stat .cap { font-size: 14px; color: var(--text-2); margin-top: 8px; }
+
+/* ---- 對照（vs）---- */
+.tpl-report .vs-tag {
+  display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .08em;
+  padding: 3px 12px; border-radius: 999px; margin-bottom: 10px;
+}
+.tpl-report .vs-tag.lead { background: color-mix(in srgb, var(--accent-2) 14%, transparent); color: var(--accent-2); }
+.tpl-report .vs-tag.conv { background: color-mix(in srgb, var(--accent-3) 18%, transparent); color: var(--accent-3); }
+
+/* ---- 護欄卡 ---- */
+.tpl-report .guard { border-left: 3px solid var(--warn); }
+.tpl-report .guard h4::before { content: "🛡 "; }
+
+/* ---- 一週時間軸 ---- */
+.tpl-report .week {
+  display: grid; grid-template-columns: repeat(8, 1fr); gap: 10px; margin-top: 30px;
+}
+.tpl-report .day {
+  border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 10px;
+  background: var(--surface); box-shadow: var(--shadow); text-align: center; min-height: 132px;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.tpl-report .day .d { font-size: 12px; font-weight: 800; color: var(--text-3); letter-spacing: .08em; }
+.tpl-report .day .what { font-size: 13px; color: var(--text-1); font-weight: 600; line-height: 1.4; }
+.tpl-report .day.lead { border-top: 3px solid var(--accent-2); }
+.tpl-report .day.conv { border-top: 3px solid var(--accent-3); }
+.tpl-report .day.report { border-top: 3px solid var(--good); background: var(--grad-soft); }
+.tpl-report .day .chip {
+  font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 999px; align-self: center;
+}
+.tpl-report .day.lead .chip { background: color-mix(in srgb, var(--accent-2) 16%, transparent); color: var(--accent-2); }
+.tpl-report .day.conv .chip { background: color-mix(in srgb, var(--accent-3) 18%, transparent); color: var(--accent-3); }
+.tpl-report .day.report .chip { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
+
+/* ---- 小標清單 ---- */
+.tpl-report ul.clean { list-style: none; padding: 0; margin: 0; }
+.tpl-report ul.clean li { position: relative; padding-left: 26px; margin: 10px 0; font-size: 17px; color: var(--text-1); line-height: 1.55; }
+.tpl-report ul.clean li::before { content: "▸"; position: absolute; left: 0; color: var(--accent-2); font-weight: 800; }
+.tpl-report ul.clean li .sub { display: block; font-size: 14px; color: var(--text-2); margin-top: 2px; }
+
+.tpl-report .tag-accent {
+  display:inline-block; padding:4px 12px; border-radius:999px; font-size:12px; font-weight:700;
+  background: color-mix(in srgb, var(--accent-2) 12%, transparent); color: var(--accent-2);
+}
